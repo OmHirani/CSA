@@ -1,3 +1,4 @@
+
 public class MathEx {
     public static void main(String [] args){
         System.out.println(swap(123));
@@ -6,6 +7,10 @@ public class MathEx {
         timeLeft(4, 34, 10, 59);
         timeLeft(1, 21, 9, 33);
         timeLeft(7, 02, 8, 14);
+        System.out.println(dayOfWeek(5,10));
+        System.out.println(dayOfWeek(4,20));
+        System.out.println(dayOfWeek(1,19));
+
     }
     public static int swap(int initial){
         int hundreds = initial/100;
@@ -23,7 +28,12 @@ public class MathEx {
 
         System.out.println(Hour +" hours and " + Minute + " minutes left");
     }
-        
+    
+    public static int dayOfWeek(int day, int date){
+        int DateTotal = (day + date - 1)%7;
+        return DateTotal;
+
+    }
 
 }
 
