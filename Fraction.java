@@ -69,17 +69,18 @@ Fraction f5 = f1.multiply(f2);
 System.out.println(f1 + " * " + f2 + " = " + f5);
 // Add code to call reciprocal here
 Fraction f6 = f1.reciprocal();
+System.out.print("This is the reciprocal of f1 (3/4) ");
 System.out.println(f6);
 
 
 // create 2 new fractions and add them here.
 Fraction f7 = new Fraction (8,10);
-System.out.println(f7);
 
 
 Fraction f8 = new Fraction (13,19);
-System.out.println(f8);
 
+Fraction f9 = f7.add(f8);
+System.out.println(f9);
 
 }
 
